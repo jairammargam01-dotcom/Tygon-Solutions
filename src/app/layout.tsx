@@ -37,16 +37,22 @@ export const metadata: Metadata = {
     "Tygon Solutions",
     "Technology Company",
     "Software Development Company",
+    "Software Development Services",
     "AI Solutions",
     "Artificial Intelligence",
+    "AI Development Company",
     "Custom Software Development",
     "Web Development",
+    "Website Development",
     "Mobile App Development",
     "Cloud Services",
+    "Cloud Computing",
     "DevOps",
     "Cybersecurity",
     "Digital Marketing",
     "SEO Services",
+    "Branding",
+    "UI UX Design",
     "Business Consulting",
     "Technology Consulting",
     "Digital Transformation",
@@ -54,7 +60,9 @@ export const metadata: Metadata = {
     "Enterprise Software",
     "Technology Partner",
     "Software Company India",
-    "Soical Media Marketing",
+    "IT Services",
+    "Application Development",
+    "Social Media Marketing",
     "Social Media Management",
   ],
 
@@ -74,9 +82,11 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,
@@ -94,7 +104,7 @@ export const metadata: Metadata = {
     siteName: "Tygon Solutions",
     title: "Tygon Solutions | One Partner. Unlimited Digital Solutions.",
     description:
-      "Helping businesses build, automate, market, and scale through AI, software engineering, cloud, digital marketing, and innovative technology solutions.",
+      "Helping businesses build, automate, market, and scale through AI, software engineering, cloud, digital marketing, cybersecurity, and innovative technology solutions.",
     images: [
       {
         url: "/og-image.png",
@@ -109,7 +119,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tygon Solutions | One Partner. Unlimited Digital Solutions.",
     description:
-      "Helping businesses build, automate, market, and scale through AI, software engineering, cloud, digital marketing, and innovative technology solutions.",
+      "Helping businesses build, automate, market, and scale through AI, software engineering, cloud, digital marketing, cybersecurity, and innovative technology solutions.",
     images: ["/og-image.png"],
   },
 
@@ -136,12 +146,81 @@ export const metadata: Metadata = {
 
   category: "technology",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+
+    "@id": `${siteUrl}/#organization`,
+
+    name: "Tygon Solutions",
+
+    url: siteUrl,
+
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/logo.png`,
+      width: 512,
+      height: 512,
+    },
+
+    image: `${siteUrl}/og-image.png`,
+
+    description:
+      "Tygon Solutions helps businesses build, automate, market, and scale through AI solutions, software development, cloud services, cybersecurity, digital marketing, branding, and technology consulting.",
+
+    email: "tygonsolutions@gmail.com",
+
+    telephone: "+91-8919655002",
+
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "IN",
+    },
+
+    sameAs: [
+      "https://www.linkedin.com/company/tygon-solutions",
+      "https://www.instagram.com/tygon_solutions",
+      "https://github.com/jairammargam01-dotcom/Tygon-Solutions",
+    ],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+
+    "@type": "WebSite",
+
+    "@id": `${siteUrl}/#website`,
+
+    url: siteUrl,
+
+    name: "Tygon Solutions",
+
+    description:
+      "Helping businesses build, automate, market, and scale through AI, software engineering, cloud, cybersecurity, digital marketing, and innovative technology solutions.",
+
+    publisher: {
+      "@id": `${siteUrl}/#organization`,
+    },
+
+    inLanguage: "en-US",
+
+    potentialAction: {
+      "@type": "SearchAction",
+
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${siteUrl}/blog?search={search_term_string}`,
+      },
+
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <html
       lang="en"
@@ -149,6 +228,22 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="flex min-h-screen flex-col bg-background font-sans antialiased text-foreground">
+        {/* Organization Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        {/* Website Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         <ScrollToHash />
 
         <Providers>

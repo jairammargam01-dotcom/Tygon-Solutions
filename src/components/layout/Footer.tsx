@@ -81,7 +81,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/tacito_voice_055?igsh=ZW82bTliNGlsZmZl"
+                  href="https://www.instagram.com/tygon_solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -242,7 +242,7 @@ export default function Footer() {
             </Link>
 
             <a
-              href="https://www.instagram.com/tacito_voice_055?igsh=ZW82bTliNGlsZmZl"
+              href="https://www.instagram.com/tygon_solutions"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 transition-colors hover:text-primary"

@@ -90,12 +90,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  const blogPages: MetadataRoute.Sitemap = [...blogPosts]
+    .sort(
+      (a, b) =>
+        new Date(b.updatedAt ?? b.date).getTime() -
+        new Date(a.updatedAt ?? a.date).getTime()
+    )
+    .map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.updatedAt ?? post.date),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    }));
 
   return [...staticPages, ...blogPages];
 }

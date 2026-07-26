@@ -7,21 +7,21 @@ export default function WebsiteDevelopmentCost() {
 
       <p>
         A professional website is one of the most valuable investments a
-        business can make. Whether you're launching a startup, modernizing an
+        business can make. Whether you’re launching a startup, modernizing an
         existing business, or expanding into new markets, your website often
         creates the first impression customers have of your brand.
       </p>
 
       <p>
         One of the most common questions business owners ask is:
-        <strong> "How much does website development cost?"</strong>
+        <strong> &quot;How much does website development cost?&quot;</strong>
         The answer depends on several factors, including the type of website,
         required features, design complexity, integrations, and long-term
         business goals.
       </p>
 
       <p>
-        In this guide, we'll break down realistic website development costs in
+        In this guide, we’ll break down realistic website development costs in
         2026, explain what influences pricing, compare different website types,
         and help you understand how to choose the right solution for your
         business.
@@ -94,7 +94,7 @@ export default function WebsiteDevelopmentCost() {
       <h3>1. Website Type</h3>
 
       <p>
-        The biggest pricing factor is the kind of website you're building.
+        The biggest pricing factor is the kind of website you’re building.
       </p>
 
       <ul>
@@ -160,7 +160,7 @@ export default function WebsiteDevelopmentCost() {
       </p>
 
       <p>
-        If you're planning a custom website with advanced functionality,
+        If you’re planning a custom website with advanced functionality,
         explore our{" "}
         <Link
           href="/services#web"
@@ -175,7 +175,7 @@ export default function WebsiteDevelopmentCost() {
       <h3>5. Content Creation</h3>
 
       <p>
-        Website development isn't only about coding. Businesses often require
+        Website development isn’t only about coding. Businesses often require
         professional copywriting, photography, graphics, videos, and SEO
         content before launch.
       </p>
@@ -230,7 +230,7 @@ export default function WebsiteDevelopmentCost() {
       <h2>Website Development Cost by Website Type</h2>
 
       <p>
-        Every business has different goals, which means there isn't a single
+        Every business has different goals, which means there isn’t a single
         price for website development. A simple informational website requires
         far less effort than an enterprise platform with custom workflows,
         integrations, and user management.
@@ -302,7 +302,7 @@ export default function WebsiteDevelopmentCost() {
       <h3>Custom Web Application</h3>
 
       <p>
-        Custom business platforms are built specifically for an organization's
+        Custom business platforms are built specifically for an organization’s
         unique processes. These projects often include dashboards, automation,
         APIs, AI features, reporting systems, and enterprise integrations.
       </p>
@@ -444,7 +444,7 @@ export default function WebsiteDevelopmentCost() {
       <h2>How to Choose the Right Website Development Company</h2>
 
       <p>
-        Choosing the lowest-priced proposal isn't always the best long-term
+        Choosing the lowest-priced proposal isn’t always the best long-term
         decision. A reliable development partner should understand your
         business goals, recommend scalable technologies, and provide ongoing
         support after launch.
@@ -579,7 +579,7 @@ export default function WebsiteDevelopmentCost() {
       </p>
 
       <p>
-        If you're evaluating technologies for your next website, continue
+        If you’re evaluating technologies for your next website, continue
         reading our{" "}
         <Link
           href="/blog/react-vs-nextjs-business-websites"

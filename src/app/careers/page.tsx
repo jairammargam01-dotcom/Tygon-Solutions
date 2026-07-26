@@ -1,21 +1,3 @@
-/*import type { Metadata } from "next";
-import CareersClient from "./CareersClient";
-
-export const metadata: Metadata = {
-  title: "Careers",
-  description:
-    "Join the Tygon Solutions network of developers, designers, AI specialists, marketers, consultants, and innovators building world-class digital solutions.",
-  alternates: {
-    canonical: "/careers",
-  },
-};
-
-export default function CareersPage() {
-  return <CareersClient />;
-}
-*/
-
-
 import type { Metadata } from "next";
 import CareersClient from "./CareersClient";
 
@@ -66,7 +48,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Remote Motion Graphics Designer & Video Editor | Careers ",
+      "Remote Motion Graphics Designer & Video Editor | Careers",
 
     description:
       "We're hiring a full-time remote Motion Graphics Designer & Video Editor. Join Tygon Solutions and work on exciting motion graphics, advertisements, YouTube videos, animations, and social media content.",
@@ -82,13 +64,76 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Remote Motion Graphics Designer & Video Editor ",
+      "Remote Motion Graphics Designer & Video Editor",
 
     description:
       "Apply for our full-time remote Motion Graphics Designer & Video Editor position and become part of the Tygon Solutions creative team.",
   },
 };
 
+const jobPostingSchema = {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+
+  title: "Motion Graphics Designer & Video Editor",
+
+  description:
+    "Tygon Solutions is hiring a full-time Remote Motion Graphics Designer & Video Editor. You'll create motion graphics, advertisements, YouTube videos, social media content, branding assets, and animations while collaborating with our creative team.",
+
+  identifier: {
+    "@type": "PropertyValue",
+    name: "Tygon Solutions",
+    value: "MOTION-GRAPHICS-VIDEO-EDITOR-2026",
+  },
+
+  datePosted: "2026-07-20",
+
+  validThrough: "2026-12-31T23:59:59+05:30",
+
+  employmentType: "FULL_TIME",
+
+  jobLocationType: "TELECOMMUTE",
+
+  applicantLocationRequirements: {
+    "@type": "Country",
+    name: "India",
+  },
+
+  hiringOrganization: {
+    "@type": "Organization",
+    name: "Tygon Solutions",
+    sameAs: "https://tygon-solutions.vercel.app",
+    logo: "https://tygon-solutions.vercel.app/logo.png",
+  },
+
+  industry: "Information Technology",
+
+  occupationalCategory: "Motion Graphics Designer",
+
+  workHours: "Full-Time",
+
+  directApply: true,
+
+  url: "https://tygon-solutions.vercel.app/careers",
+
+  applicationContact: {
+    "@type": "ContactPoint",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeaKztvzQSHEsRFeHMGky4nSET248Ifs4E-zL_YLuOdYTEFWg/viewform?usp=header",
+    contactType: "Job Application",
+  },
+};
+
 export default function CareersPage() {
-  return <CareersClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jobPostingSchema),
+        }}
+      />
+
+      <CareersClient />
+    </>
+  );
 }
