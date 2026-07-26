@@ -7,11 +7,49 @@ import { blogPosts } from "@/content/blogPosts";
 import AiBusinessCosts from "@/content/articles/AiBusinessCosts";
 import ReactVsNext from "@/content/articles/ReactVsNext";
 import DigitalTransformation from "@/content/articles/DigitalTransformation";
+import WebsiteDevelopmentCost from "@/content/articles/WebsiteDevelopmentCost";
 
 const articleComponents = {
   AiBusinessCosts,
   ReactVsNext,
   DigitalTransformation,
+  WebsiteDevelopmentCost,
+};
+
+const articleFaqs: Record<
+  string,
+  {
+    question: string;
+    answer: string;
+  }[]
+> = {
+  "website-development-cost-2026": [
+    {
+      question: "How much does a business website cost?",
+      answer:
+        "Most professional business websites typically cost between $1,000 and $5,000 depending on the project's scope, design requirements, and functionality.",
+    },
+    {
+      question: "How long does website development take?",
+      answer:
+        "A standard business website usually takes 3–6 weeks, while complex e-commerce platforms and custom web applications can take several months.",
+    },
+    {
+      question: "Is a custom website better than WordPress?",
+      answer:
+        "It depends on your goals. WordPress is suitable for many small websites, while custom-built websites offer greater flexibility, performance, scalability, and long-term control for growing businesses.",
+    },
+    {
+      question: "Does website development include SEO?",
+      answer:
+        "Professional website development should include technical SEO, responsive design, optimized metadata, fast loading speeds, and a search-engine-friendly site structure.",
+    },
+    {
+      question: "Can my website grow as my business grows?",
+      answer:
+        "Yes. Modern websites built with scalable technologies can easily support additional pages, new services, integrations, user accounts, and future business requirements.",
+    },
+  ],
 };
 
 type PageProps = {
@@ -97,6 +135,7 @@ export default async function BlogArticlePage({
       date={post.date}
       readTime={post.readTime}
       image={post.image}
+      faq={articleFaqs[slug] ?? []}
     >
       <Article />
     </ArticleLayout>

@@ -15,9 +15,18 @@ import {
 import { blogPosts } from "@/content/blogPosts";
 import BlogCard from "@/components/BlogCard";
 
+// Sort newest → oldest
+const sortedPosts = [...blogPosts].sort(
+  (a, b) =>
+    new Date(b.date).getTime() -
+    new Date(a.date).getTime()
+);
+
 const categories = [
   "All",
-  ...Array.from(new Set(blogPosts.map((post) => post.category))),
+  ...Array.from(
+    new Set(sortedPosts.map((post) => post.category))
+  ),
 ];
 
 // NOTE:
@@ -26,13 +35,14 @@ const categories = [
 
 export default function BlogPage() {
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] =
+    useState("All");
 
-  const featuredPost =
-    blogPosts.find((post) => post.featured) ?? blogPosts[0];
+  // Always use the newest article as Featured
+  const featuredPost = sortedPosts[0];
 
   const filteredPosts = useMemo(() => {
-    return blogPosts.filter((post) => {
+    return sortedPosts.filter((post) => {
       const matchesCategory =
         selectedCategory === "All" ||
         post.category === selectedCategory;
@@ -128,6 +138,7 @@ export default function BlogPage() {
                 width={1200}
                 height={800}
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
 
