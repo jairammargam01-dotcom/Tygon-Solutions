@@ -4,30 +4,30 @@ import CareersClient from "./CareersClient";
 export const metadata: Metadata = {
   metadataBase: new URL("https://tygon-solutions.vercel.app"),
 
-  title:
-    "Remote Motion Graphics Designer & Video Editor Jobs | Full-Time",
+  title: "Creative Visual Designer Jobs in India | Tygon Solutions",
 
   description:
-    "Tygon Solutions is hiring a full-time remote Motion Graphics Designer & Video Editor. Create engaging motion graphics, advertisements, YouTube videos, social media reels, animations, and branded visual content. Apply today.",
+    "Explore creative design opportunities at Tygon Solutions. We welcome graphic designers, motion designers, illustrators, visual designers, UI/UX designers, and creative professionals across India.",
 
   keywords: [
-    "Motion Graphics Designer Jobs",
-    "Video Editor Jobs",
-    "Motion Graphics Jobs",
-    "Motion Designer",
-    "Remote Motion Graphics Designer",
-    "Remote Video Editor",
-    "Remote Creative Jobs",
-    "Remote Jobs India",
-    "Adobe After Effects Jobs",
-    "Adobe Premiere Pro Jobs",
-    "YouTube Video Editor",
-    "Social Media Video Editor",
-    "Animation Jobs",
-    "Creative Careers",
-    "Video Editing Careers",
-    "Creative Designer Jobs",
+    "Creative Designer Jobs India",
+    "Visual Designer Jobs India",
+    "UI UX Designer Jobs India",
+    "Graphic Designer Jobs India",
+    "Motion Graphics Designer Jobs India",
+    "Creative Design Careers",
+    "Visual Design Careers",
+    "UI UX Careers India",
+    "Graphic Design Careers India",
+    "Motion Design Careers India",
+    "Illustration Jobs India",
+    "Wireframing Jobs India",
+    "Storyboarding Jobs India",
+    "Creative Jobs India",
+    "Design Jobs India",
     "Tygon Solutions Careers",
+    "Tygon Solutions Jobs",
+    "Tygon Studios",
   ],
 
   alternates: {
@@ -47,93 +47,39 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Remote Motion Graphics Designer & Video Editor | Careers",
+    title: "Creative Design Careers in India | Tygon Solutions",
 
     description:
-      "We're hiring a full-time remote Motion Graphics Designer & Video Editor. Join Tygon Solutions and work on exciting motion graphics, advertisements, YouTube videos, animations, and social media content.",
+      "Tygon Solutions is looking for creative professionals across UI/UX design, graphic design, motion graphics, illustration, visual design, wireframing, and storyboarding.",
 
     url: "/careers",
 
     siteName: "Tygon Solutions",
 
     type: "website",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tygon Solutions Careers",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
 
-    title:
-      "Remote Motion Graphics Designer & Video Editor",
+    title: "Creative Design Careers | Tygon Solutions",
 
     description:
-      "Apply for our full-time remote Motion Graphics Designer & Video Editor position and become part of the Tygon Solutions creative team.",
-  },
-};
+      "Explore creative design opportunities at Tygon Solutions for UI/UX designers, graphic designers, motion designers, illustrators, and visual creatives.",
 
-const jobPostingSchema = {
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-
-  title: "Motion Graphics Designer & Video Editor",
-
-  description:
-    "Tygon Solutions is hiring a full-time Remote Motion Graphics Designer & Video Editor. You'll create motion graphics, advertisements, YouTube videos, social media content, branding assets, and animations while collaborating with our creative team.",
-
-  identifier: {
-    "@type": "PropertyValue",
-    name: "Tygon Solutions",
-    value: "MOTION-GRAPHICS-VIDEO-EDITOR-2026",
-  },
-
-  datePosted: "2026-07-20",
-
-  validThrough: "2026-12-31T23:59:59+05:30",
-
-  employmentType: "FULL_TIME",
-
-  jobLocationType: "TELECOMMUTE",
-
-  applicantLocationRequirements: {
-    "@type": "Country",
-    name: "India",
-  },
-
-  hiringOrganization: {
-    "@type": "Organization",
-    name: "Tygon Solutions",
-    sameAs: "https://tygon-solutions.vercel.app",
-    logo: "https://tygon-solutions.vercel.app/logo.png",
-  },
-
-  industry: "Information Technology",
-
-  occupationalCategory: "Motion Graphics Designer",
-
-  workHours: "Full-Time",
-
-  directApply: true,
-
-  url: "https://tygon-solutions.vercel.app/careers",
-
-  applicationContact: {
-    "@type": "ContactPoint",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSeaKztvzQSHEsRFeHMGky4nSET248Ifs4E-zL_YLuOdYTEFWg/viewform?usp=header",
-    contactType: "Job Application",
+    images: ["/og-image.png"],
   },
 };
 
 export default function CareersPage() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jobPostingSchema),
-        }}
-      />
-
-      <CareersClient />
-    </>
-  );
+  return <CareersClient />;
 }

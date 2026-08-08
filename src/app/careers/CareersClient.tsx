@@ -7,29 +7,38 @@ import { Button } from "@/components/ui/button";
 
 const positions = [
   {
-    title: "Motion Graphics Designer & Video Editor",
-    type: "Full-time",
-    location: "Remote",
-    department: "Tygon Studios",
+    title: "Creative Visual Designer",
+    type: "Flexible",
+    location: "India",
+    department: "Creative & Design",
+    arrangement: "Hybrid",
   },
 ];
 
 export default function CareersClient() {
   return (
-    <section className="container mx-auto max-w-5xl px-4 pt-40 pb-20">
-      <div className="mb-16 text-center">
-        <h1 className="font-display mb-6 text-4xl font-bold text-white md:text-6xl">
-          Join <span className="text-gradient">Tygon Solutions</span>
+    <section className="mx-auto max-w-5xl px-6 pb-24 pt-36 md:pt-40">
+      <div className="mb-12 text-center">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/50">
+          Careers
+        </p>
+
+        <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+          Join Tygon Solutions
         </h1>
 
-        <p className="mx-auto max-w-2xl text-lg text-white/70">
-          We’re hiring a creative{" "}
-          <strong>Motion Graphics Designer &amp; Video Editor</strong> to join
-          <strong> Tygon Studios</strong>, our creative division. You’ll create
-          engaging motion graphics, advertisements, YouTube videos, social media
-          reels, animations, and branded visual content for clients across
-          multiple industries. If you’re passionate about storytelling through
-          design and video, we’d love to hear from you.
+        <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
+          We’re looking for creative professionals to join our growing
+          <strong className="text-white"> Creative &amp; Design </strong>
+          team. If you have strong skills in UI/UX design, graphic design,
+          motion graphics, digital illustration, wireframing, storyboarding,
+          or other visual design disciplines, we’d love to see your work.
+        </p>
+
+        <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/60">
+          You don’t need experience in every area. We’re primarily interested
+          in your creativity, design skills, problem-solving ability, and the
+          quality of your portfolio.
         </p>
       </div>
 
@@ -41,10 +50,10 @@ export default function CareersClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05 }}
-            className="glass-card flex flex-col items-start justify-between gap-4 p-6 transition-colors hover:bg-white/10 md:flex-row md:items-center md:p-8"
+            className="glass-card flex flex-col items-start justify-between gap-6 p-6 transition-colors hover:bg-white/10 md:flex-row md:items-center md:p-8"
           >
             <div>
-              <h2 className="mb-2 text-xl font-bold text-white">
+              <h2 className="mb-3 text-xl font-bold text-white">
                 {position.title}
               </h2>
 
@@ -55,13 +64,21 @@ export default function CareersClient() {
 
                 <span>{position.type}</span>
 
+                <span>• {position.arrangement}</span>
+
                 <span>• {position.location}</span>
               </div>
+
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+                Opportunities across UI/UX design, graphic design, motion
+                graphics, illustration, wireframing, storyboarding, and
+                visual creative design.
+              </p>
             </div>
 
             <Button asChild variant="outline" className="shrink-0">
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeaKztvzQSHEsRFeHMGky4nSET248Ifs4E-zL_YLuOdYTEFWg/viewform"
+                href="https://forms.gle/mknED12hfdkUJAv27"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -70,6 +87,13 @@ export default function CareersClient() {
             </Button>
           </motion.div>
         ))}
+      </div>
+
+      <div className="mx-auto mt-10 max-w-3xl text-center">
+        <p className="text-sm leading-relaxed text-white/50">
+          We welcome applications from candidates interested in full-time,
+          part-time, freelance, or contract opportunities.
+        </p>
       </div>
     </section>
   );
