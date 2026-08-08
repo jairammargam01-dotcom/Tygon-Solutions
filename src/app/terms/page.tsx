@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
+    <section className="mx-auto max-w-5xl px-6 pb-24 pt-36 md:pt-40">
       <div className="mb-12 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/50">
           Legal
