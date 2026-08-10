@@ -9,21 +9,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-
-        allow: [
-          "/",
-          "/about",
-          "/services",
-          "/industries",
-          "/technologies",
-          "/portfolio",
-          "/process",
-          "/blog",
-          "/careers",
-          "/contact",
-          "/faq",
-        ],
-
+        allow: "/",
         disallow: [
           "/api/",
           "/admin/",
@@ -33,38 +19,8 @@ export default function robots(): MetadataRoute.Robots {
           "/tmp/",
         ],
       },
-
-      {
-        userAgent: "Googlebot",
-
-        allow: "/",
-
-        disallow: [
-          "/api/",
-          "/admin/",
-          "/dashboard/",
-        ],
-      },
-
-      {
-        userAgent: "Bingbot",
-
-        allow: "/",
-
-        disallow: [
-          "/api/",
-          "/admin/",
-          "/dashboard/",
-        ],
-      },
     ],
-
-    sitemap: [
-      `${baseUrl}/sitemap.xml`,
-      `${baseUrl}/image-sitemap.xml`,
-      `${baseUrl}/feed.xml`,
-    ],
-
+    sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,
   };
 }
