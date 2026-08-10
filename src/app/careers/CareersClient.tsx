@@ -17,7 +17,7 @@ const positions = [
 
 export default function CareersClient() {
   return (
-    <section className="mx-auto max-w-5xl px-6 pb-24 pt-36 md:pt-40">
+    <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <div className="mb-12 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/50">
           Careers
@@ -30,9 +30,9 @@ export default function CareersClient() {
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
           We’re looking for creative professionals to join our growing
           <strong className="text-white"> Creative &amp; Design </strong>
-          team. If you have strong skills in UI/UX design, graphic design,
-          motion graphics, digital illustration, wireframing, storyboarding,
-          or other visual design disciplines, we’d love to see your work.
+          team. If you have strong skills in graphic design, motion graphics,
+          digital illustration, wireframing, storyboarding, or other visual
+          design disciplines, we’d love to see your work.
         </p>
 
         <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/60">
@@ -70,9 +70,9 @@ export default function CareersClient() {
               </div>
 
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-                Opportunities across UI/UX design, graphic design, motion
-                graphics, illustration, wireframing, storyboarding, and
-                visual creative design.
+                Opportunities across graphic design, motion graphics,
+                illustration, wireframing, storyboarding, branding, social
+                media creatives, and visual design.
               </p>
             </div>
 

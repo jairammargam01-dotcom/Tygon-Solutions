@@ -7,24 +7,26 @@ export const metadata: Metadata = {
   title: "Creative Visual Designer Jobs in India | Tygon Solutions",
 
   description:
-    "Explore creative design opportunities at Tygon Solutions. We welcome graphic designers, motion designers, illustrators, visual designers, UI/UX designers, and creative professionals across India.",
+    "Explore creative design opportunities at Tygon Solutions for graphic designers, motion designers, illustrators, visual designers, and other creative professionals across India.",
 
   keywords: [
     "Creative Designer Jobs India",
+    "Creative Visual Designer Jobs India",
     "Visual Designer Jobs India",
-    "UI UX Designer Jobs India",
     "Graphic Designer Jobs India",
     "Motion Graphics Designer Jobs India",
     "Creative Design Careers",
     "Visual Design Careers",
-    "UI UX Careers India",
     "Graphic Design Careers India",
     "Motion Design Careers India",
     "Illustration Jobs India",
     "Wireframing Jobs India",
     "Storyboarding Jobs India",
+    "Branding Designer Jobs India",
+    "Social Media Designer Jobs India",
     "Creative Jobs India",
     "Design Jobs India",
+    "Creative Careers India",
     "Tygon Solutions Careers",
     "Tygon Solutions Jobs",
     "Tygon Studios",
@@ -47,10 +49,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Creative Design Careers in India | Tygon Solutions",
+    title: "Creative Visual Designer Jobs in India | Tygon Solutions",
 
     description:
-      "Tygon Solutions is looking for creative professionals across UI/UX design, graphic design, motion graphics, illustration, visual design, wireframing, and storyboarding.",
+      "Tygon Solutions is looking for creative professionals across graphic design, motion graphics, illustration, visual design, wireframing, storyboarding, branding, and social media creative work.",
 
     url: "/careers",
 
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tygon Solutions Careers",
+        alt: "Tygon Solutions Creative Visual Designer Careers",
       },
     ],
   },
@@ -71,10 +73,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Creative Design Careers | Tygon Solutions",
+    title: "Creative Visual Designer Jobs | Tygon Solutions",
 
     description:
-      "Explore creative design opportunities at Tygon Solutions for UI/UX designers, graphic designers, motion designers, illustrators, and visual creatives.",
+      "Explore creative design opportunities at Tygon Solutions for graphic designers, motion designers, illustrators, visual designers, and creative professionals.",
 
     images: ["/og-image.png"],
   },
